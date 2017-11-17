@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dte: 1.5
+  otm: 1.5
+  fvmean: 1.5
+  ret: 1.5
+  vix: 1.5
+
+two:
+  dte: 1.5
+  otm: 1.5
+  fvmean: 1.5
+  ret: 1.5
+  vix: 1.5

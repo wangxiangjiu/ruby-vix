@@ -1,0 +1,33 @@
+    <% if @data %>
+<div class = output>
+    <table class = "pure-table pure-table-bordered center">
+        <thead>
+            <tr>
+                <th>VIX</th>
+                <th>FVIX</th>
+                <th>OTM</th>
+                <th>DTE</th>
+                <th>Mean Return</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= @data["vix"] %> </td>
+                <td><%= @data["fvmean"] %> </td>
+                <td><%= @data["otm"] %> </td>
+                <td><%= @data["dte"] %></td>
+                <td><%= @data["ret"] %></td>
+            </tr>
+        </tbody>
+    </table>
+</div>    
+    
+
+        <!--OTM: <br>-->
+        <!--DTE:  <br>-->
+        <!--RETURN:-->
+        
+    <% else %>
+        
+        
+    <% end %>

@@ -1,0 +1,37 @@
+
+<div class = main>
+    <div class=form>
+        <%= form_tag('/vix_data', :method => :get, :class => 'pure-form pure-form-aligned') do %>
+            <fieldset>
+                    
+                <div class = "pure-control-group">
+                    <label for= "vix">Current VIX: </label>
+                    <%= text_field_tag :vix, params[:vix] %>
+                </div>
+                
+                <div class = "pure-control-group">
+                    <label for= "FVmean">Future VIX:</label>
+                    <%= text_field_tag :fvmean, params[:fvmean] %>
+                </div>
+                
+                <div class = "pure-controls">
+    
+                    <%= submit_tag("search", :class=> 'pure-button pure-button-primary') %>
+                        
+                </div>
+    
+                
+            </fieldset>
+        <% end %>
+    
+
+
+
+
+    </div>        
+</div>
+
+
+    <%= render "vix_data" %>
+
+
