@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   
   get '/vix_data' => 'vixes#vix_data'
   
+  get '/exec_spike' => "vixes#exec_spike"
   
+  post '/exec_spike' => "vixes#python_calc"
   
   # You can have the root of your site routed with "root"
   # root 'welcome#index'

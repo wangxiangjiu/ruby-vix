@@ -1,0 +1,44 @@
+
+<div class = main>
+    <div class=form>
+        <%= form_tag('/exec_spike', :method => :post, :class => 'pure-form pure-form-aligned') do %>
+            <fieldset>
+                    
+                <div class = "pure-control-group">
+                    <label for= "vix">Current VIX: </label>
+                    <%= text_field_tag :vix, params[:vix] %>
+                </div>
+                
+                <div class = "pure-control-group">
+                    <label for= "FVmean">Future VIX:</label>
+                    <%= text_field_tag :fvmean, params[:fvmean] %>
+                </div>
+                <div class = "pure-control-group">
+                    <label for= "OTM">OTM:</label>
+                    <%= text_field_tag :fvmean, params[:otm] %>
+                </div>
+                <div class = "pure-control-group">
+                    <label for= "DTE">DTE:</label>
+                    <%= text_field_tag :fvmean, params[:dte] %>
+                </div>
+                
+                <div class = "pure-controls">
+    
+                    <%= submit_tag("search", :class=> 'pure-button pure-button-primary') %>
+                        
+                </div>
+    
+                
+            </fieldset>
+        <% end %>
+
+    </div>        
+</div>
+<div>
+    <% if @result %>
+        hello 
+        <%= @result %>
+    <% end %>
+
+</div>
+
